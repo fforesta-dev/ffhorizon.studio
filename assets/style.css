@@ -1,0 +1,209 @@
+/*
+ * FF Horizon Studio – stile comune delle pagine.
+ * Blu e bianco come l'app Il Mio Rione, carattere Atkinson Hyperlegible Next
+ * (incluso nel sito: nessuna richiesta a servizi esterni).
+ */
+
+@font-face {
+  font-family: 'Atkinson Hyperlegible Next';
+  src: url('fonts/AtkinsonHyperlegibleNext_400Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Atkinson Hyperlegible Next';
+  src: url('fonts/AtkinsonHyperlegibleNext_700Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --navy: #1f3b63;
+  --text: #16202e;
+  --text-secondary: #5b6676;
+  --background: #f5f7fa;
+  --surface: #ffffff;
+  --border: #cbd3dd;
+  --highlight: #e6eef8;
+  --link: #2f6db5;
+  --header: #1f3b63;
+  --on-header: #ffffff;
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #e8edf3;
+    --text-secondary: #a3aebd;
+    --background: #0f1722;
+    --surface: #1a2433;
+    --border: #344257;
+    --highlight: #1c2e4a;
+    --link: #8fb3e8;
+    --header: #16233a;
+    --on-header: #e8edf3;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 112.5%; /* 18px: testo grande, facile da leggere */
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Atkinson Hyperlegible Next', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--background);
+}
+
+.site-header {
+  background: var(--header);
+  color: var(--on-header);
+}
+
+.site-header .inner {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.site-header a {
+  color: var(--on-header);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.site-header img {
+  width: 2.25rem;
+  height: 2.25rem;
+  flex: none;
+}
+
+.inner {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+main.inner {
+  padding-top: 1.5rem;
+  padding-bottom: 3rem;
+}
+
+h1 {
+  font-size: 1.9rem;
+  line-height: 1.2;
+  margin: 0.5rem 0 0.5rem;
+}
+
+h2 {
+  font-size: 1.35rem;
+  line-height: 1.3;
+  margin: 2.25rem 0 0.5rem;
+}
+
+h3 {
+  font-size: 1.1rem;
+  margin: 1.5rem 0 0.25rem;
+}
+
+p,
+ul,
+ol {
+  margin: 0.5rem 0 1rem;
+}
+
+li + li {
+  margin-top: 0.35rem;
+}
+
+a {
+  color: var(--link);
+  text-underline-offset: 0.15em;
+}
+
+strong {
+  font-weight: 700;
+}
+
+.updated {
+  color: var(--text-secondary);
+  margin-top: 0;
+}
+
+.box {
+  background: var(--highlight);
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  margin: 1.25rem 0;
+}
+
+.box > :first-child {
+  margin-top: 0;
+}
+
+.box > :last-child {
+  margin-bottom: 0;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  margin: 1rem 0;
+}
+
+.button {
+  display: inline-block;
+  background: var(--navy);
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 12px;
+  padding: 0.75rem 1.25rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .button {
+    background: #8fb3e8;
+    color: #0f1722;
+  }
+}
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.site-footer .inner {
+  padding-top: 1.25rem;
+  padding-bottom: 2rem;
+}
+
+.site-footer a {
+  color: var(--text-secondary);
+}
+
+.site-footer nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+  margin-bottom: 0.5rem;
+}
