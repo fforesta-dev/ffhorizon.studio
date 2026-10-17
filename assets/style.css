@@ -93,6 +93,37 @@ body {
   flex: none;
 }
 
+/* Scelta della lingua nell'intestazione: a destra, oppure sotto il nome su schermi stretti. */
+.site-header .inner {
+  flex-wrap: wrap;
+}
+
+.lang-switch {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 0.9rem;
+  margin-left: auto;
+}
+
+.site-header .lang-switch a {
+  font-size: 0.9rem;
+  font-weight: 400;
+  opacity: 0.85;
+}
+
+.site-header .lang-switch a[aria-current='page'] {
+  font-weight: 700;
+  opacity: 1;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+/* Nelle pagine tradotte dei testi legali: quale versione vale. */
+.translation-note {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
 .inner {
   max-width: 46rem;
   margin: 0 auto;
