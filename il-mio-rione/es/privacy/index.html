@@ -310,23 +310,27 @@
       cancela, hay que corregirlo a mano en el calendario.
     </p>
     <p>
-      <strong>Notificaciones</strong>, si las activas: el envío pasa por <strong>Expo</strong> (650
-      Industries, Inc., Estados Unidos), encargado del tratamiento, que recibe el código del
-      teléfono y un texto genérico, sin títulos ni nombres (por ejemplo, "Nuevo anuncio"): los
-      detalles los ves al abrir la aplicación. Además, Expo usa, como responsable independiente del
-      tratamiento, datos técnicos del dispositivo (dirección IP, errores de la aplicación) para
-      estadísticas agregadas, según <a href="https://expo.dev/privacy">su propia política de
-      privacidad</a>. Las notificaciones las entregan en el teléfono <strong>Apple</strong> (en los
-      iPhone) y <strong>Google</strong> (Firebase Cloud Messaging, en los teléfonos Android).
+      <strong>Notificaciones</strong>, si las activas: las entregan en el teléfono
+      <strong>Apple</strong> (en los iPhone) y <strong>Google</strong> (Firebase Cloud Messaging, en
+      los teléfonos Android), que reciben el código del teléfono y un texto genérico, sin títulos ni
+      nombres (por ejemplo, "Nuevo anuncio"): los detalles los ves al abrir la aplicación. Desde la
+      versión 1.0.2 de la aplicación, nuestro servidor les envía las notificaciones directamente.
+      Con las versiones anteriores, el envío sigue pasando por <strong>Expo</strong> (650
+      Industries, Inc., Estados Unidos), encargado del tratamiento, que recibe los mismos datos y
+      además usa, como responsable independiente del tratamiento, datos técnicos del dispositivo
+      (dirección IP, errores de la aplicación) para estadísticas agregadas, según
+      <a href="https://expo.dev/privacy">su propia política de privacidad</a>; cuando actualizas la
+      aplicación, el código registrado con Expo se borra.
     </p>
     <p>
       <strong>Transferencias fuera de la Unión Europea</strong>: Supabase Pte. Ltd (Singapur) y
       Supabase, Inc. (Estados Unidos) pueden acceder a los datos, que se quedan en Fráncfort, solo
       para tareas de gestión y asistencia, con las cláusulas contractuales tipo de la Comisión
-      Europea incluidas en el contrato con Supabase. Expo, Apple y Google (Estados Unidos) solo
-      reciben el código del teléfono y el texto de la notificación: Expo y Google en el marco del
-      EU-U.S. Data Privacy Framework, Apple con las cláusulas contractuales tipo de la Comisión
-      Europea. Puedes pedir una copia de las garantías a
+      Europea incluidas en el contrato con Supabase. Apple y Google (Estados Unidos), y con las
+      versiones de la aplicación anteriores a la 1.0.2 también Expo, solo reciben el código del
+      teléfono y el texto de la notificación: Expo y Google en el marco del EU-U.S. Data Privacy
+      Framework, Apple con las cláusulas contractuales tipo de la Comisión Europea. Puedes pedir una
+      copia de las garantías a
       <a href="mailto:hello@ffhorizon.studio">hello@ffhorizon.studio</a>.
     </p>
 
