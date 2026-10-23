@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 664">
+  <!-- Simbolo di LehiQuest (proposta B, scelta il 19/10/2026): l'albero della vita inciso su una
+       tavola d'ottone legata da tre anelli, come la copertina delle schede.
+       Colori: tavola #E3C483, incisioni e fori #24564D (= sfondo), anelli #B8934A, frutti #E3C483.
+       Generato da uno script: per modifiche grandi conviene rigenerarlo, non ritoccarlo a mano. -->
+  <rect width="560" height="664" rx="44" fill="#E3C483"/>
+  <circle cx="58" cy="150" r="24" fill="#24564D"/><circle cx="58" cy="150" r="34" fill="none" stroke="#B8934A" stroke-width="8"/><circle cx="58" cy="332" r="24" fill="#24564D"/><circle cx="58" cy="332" r="34" fill="none" stroke="#B8934A" stroke-width="8"/><circle cx="58" cy="514" r="24" fill="#24564D"/><circle cx="58" cy="514" r="34" fill="none" stroke="#B8934A" stroke-width="8"/>
+  <g fill="#24564D"><path d="M302 350.4 L309.4 462 Q284.6 489.9 247.4 499.2 L408.6 499.2 Q371.4 489.9 346.6 462 L354 350.4 Z"/><circle cx="328" cy="220.2" r="124"/><circle cx="225.7" cy="263.6" r="89.9"/><circle cx="430.3" cy="263.6" r="89.9"/><circle cx="269.1" cy="170.6" r="83.7"/><circle cx="386.9" cy="170.6" r="83.7"/><circle cx="328" cy="294.6" r="99.2"/><circle cx="185.4" cy="294.6" r="62"/><circle cx="470.6" cy="294.6" r="62"/></g><path d="M328 381.4 L272.2 325.6 M328 362.8 L386.9 313.2" fill="none" stroke="#24564D" stroke-width="21.1" stroke-linecap="round"/>
+  <g fill="#E3C483"><circle cx="253.6" cy="195.4" r="16.1"/><circle cx="352.8" cy="152" r="16.1"/><circle cx="421" cy="232.6" r="16.1"/><circle cx="210.2" cy="294.6" r="16.1"/><circle cx="303.2" cy="276" r="16.1"/><circle cx="452" cy="313.2" r="16.1"/><circle cx="371.4" cy="338" r="16.1"/></g>
+</svg>
